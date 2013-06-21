@@ -1,4 +1,6 @@
- CONFIG_ARM_PATCH_PHYS_VIRT is not set
+
+<!-- saved from url=(0107)https://raw.github.com/CyanogenMod/android_kernel_samsung_jf/cm-10.1/arch/arm/configs/cyanogen_jf_defconfig -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># CONFIG_ARM_PATCH_PHYS_VIRT is not set
 CONFIG_EXPERIMENTAL=y
 CONFIG_SYSVIPC=y
 # CONFIG_KERNEL_LZO is not set
@@ -714,7 +716,7 @@ CONFIG_KEYS_DEBUG_PROC_KEYS=y
 # Fork hang detection
 # CONFIG_SEC_FORKHANG_DEBUG is not set
 
-CONFIG_LOCALVERSION="-DEMENTED"
+CONFIG_LOCALVERSION="-cyanogenmod"
 CONFIG_SEC_DVFS_BOOSTER=n
 CONFIG_DEFAULT_ROW=y
 CONFIG_DEFAULT_IOSCHED="row"
