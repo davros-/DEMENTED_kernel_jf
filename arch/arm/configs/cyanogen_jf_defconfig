@@ -1,6 +1,4 @@
-
-<!-- saved from url=(0107)https://raw.github.com/CyanogenMod/android_kernel_samsung_jf/cm-10.1/arch/arm/configs/cyanogen_jf_defconfig -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;"># CONFIG_ARM_PATCH_PHYS_VIRT is not set
+# CONFIG_ARM_PATCH_PHYS_VIRT is not set
 CONFIG_EXPERIMENTAL=y
 CONFIG_SYSVIPC=y
 # CONFIG_KERNEL_LZO is not set
@@ -733,4 +731,3 @@ CONFIG_ATAGS_PROC=y
 CONFIG_KEXEC_HARDBOOT=y
 CONFIG_KEXEC_HB_PAGE_ADDR=0x8fdff000
 CONFIG_ANDROID_PERSISTENT_RAM=y
-</pre></body></html>
