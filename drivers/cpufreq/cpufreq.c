@@ -700,24 +700,6 @@ static ssize_t store_screen_off_GPU_mhz(struct cpufreq_policy *policy,
 	return count;
 }
 
-static ssize_t show_bluetooth_scaling_mhz(struct cpufreq_policy *policy, char *buf)
-{
-	return sprintf(buf, "%u\n");
-}
-static ssize_t store_bluetooth_scaling_mhz(struct cpufreq_policy *policy,
-					const char *buf, size_t count)
-{
-	unsigned int value = 0;
-	unsigned int ret;
-	ret = sscanf(buf, "%u", &value);
-	if (value > GLOBALKT_MAX_FREQ_LIMIT)
-		value = GLOBALKT_MAX_FREQ_LIMIT;
-	if (value < GLOBALKT_MIN_FREQ_LIMIT && value != 0)
-		value = GLOBALKT_MIN_FREQ_LIMIT;
-
-	return count;
-}
-
 static ssize_t show_scaling_governor_screen_off(struct cpufreq_policy *policy, char *buf)
 {
 	return scnprintf(buf, 16, "%s\n",
