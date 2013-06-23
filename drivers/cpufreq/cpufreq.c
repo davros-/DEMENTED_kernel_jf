@@ -512,8 +512,6 @@ static ssize_t __ref store_scaling_min_freq(struct cpufreq_policy *policy, const
 		}
 	}
 	
-	Lbluetooth_scaling_mhz_orig = value;
-	
 	return count;
 }
 
@@ -704,7 +702,7 @@ static ssize_t store_screen_off_GPU_mhz(struct cpufreq_policy *policy,
 
 static ssize_t show_bluetooth_scaling_mhz(struct cpufreq_policy *policy, char *buf)
 {
-	return sprintf(buf, "%u\n", Lbluetooth_scaling_mhz);
+	return sprintf(buf, "%u\n");
 }
 static ssize_t store_bluetooth_scaling_mhz(struct cpufreq_policy *policy,
 					const char *buf, size_t count)
@@ -716,7 +714,6 @@ static ssize_t store_bluetooth_scaling_mhz(struct cpufreq_policy *policy,
 		value = GLOBALKT_MAX_FREQ_LIMIT;
 	if (value < GLOBALKT_MIN_FREQ_LIMIT && value != 0)
 		value = GLOBALKT_MIN_FREQ_LIMIT;
-	Lbluetooth_scaling_mhz = value;
 
 	return count;
 }
